@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piccolio | Adventure Awaits</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">piccolio</div>
+            <div class="nav-links" id="nav-links">
+                <a href="#" style="--i:0">Shop</a>
+                <a href="#" style="--i:1">Collection</a>
+                <a href="#" style="--i:2">Our Story</a>
+                <a href="#" style="--i:3">Support</a>
+            </div>
+            <div class="nav-icons">
+                <i class="bi bi-search"></i>
+                <i class="bi bi-person"></i>
+                <i class="bi bi-bag"></i>
+                <button class="hamburger" id="hamburger" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <button class="mobile-close" id="mobile-close" aria-label="Close menu">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="mobile-nav-links">
+                <a href="#" style="--i:0">Shop</a>
+                <a href="#" style="--i:1">Collection</a>
+                <a href="#" style="--i:2">Our Story</a>
+                <a href="#" style="--i:3">Support</a>
+            </div>
+            <div class="mobile-footer">
+                <div class="mobile-icons">
+                    <i class="bi bi-search"></i>
+                    <i class="bi bi-person"></i>
+                    <i class="bi bi-bag"></i>
+                </div>
+                <p class="mobile-tagline">Premium. Minimal. Yours.</p>
+            </div>
+        </div>
+
+        <section class="hero">
+            <h1 class="hero-title">PICCOLIO</h1>
+            <div class="hero-grid">
+                <div class="hero-cta">
+                    <p class="hero-description">
+                        Premium materials meets minimal design. The perfect companion for the modern urban explorer.
+                    </p>
+                </div>
+                <div class="hero-img-wrap">
+                    <img id="main-product" src="./bag.png" alt="Backpack" class="hero-main-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="collection">
+            <div class="collection-header">
+                <h1 class="collection-title">Latest Collection</h1>
+                <p class="collection-subtitle">Shop our stylish backpack collection, featuring trendy designs, versatile
+                    styles,<br>and exceptional quality for every adventure.</p>
+            </div>
+
+            <div class="collection-grid">
+                <div class="collection-card">
+                    <img src="./Assets/card/card1.png" alt="Backpack" />
+                    <button class="show-more-btn">Show More</button>
+                </div>
+                <div class="collection-card">
+                    <img src="./Assets/card/card2.png" alt="Duffle Bag" />
+                    <button class="show-more-btn">Show More</button>
+                </div>
+                <div class="collection-card">
+                    <img src="./Assets/card/card3.png" alt="Tote Bag" />
+                    <button class="show-more-btn">Show More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="your-choice">
+            <div class="right-side">
+                <div class="find-head">
+                    <h1 class="find-bag-title">FIND THE BACKPACK OF YOUR CHOICE</h1>
+                    <p class="find-bag-subtitle">
+                        experience the benefits of our backpacks, designed to elevate your daily adventures with style,
+                        comfort, and
+                    </p>
+                </div>
+                <div class="find-product">
+                    <div class="d-flex">
+                        <div class="card">
+                            <img src="./bag.png" alt="">
+                        </div>
+                        <div class="card">
+                            <img src="./bag2image.png" alt="">
+                        </div>
+                    </div>
+                    <button class="Explore-more">Explore more</button>
+                </div>
+            </div>
+
+            <div class="left-side">
+                <img src="./Assets/card/your fa.png" width="800">
+            </div>
+        </section>
+
+        <section class="all-products">
+            <div class="products-header">
+                <h1 class="collection-title">ALL PRODUCTS</h1>
+            </div>
+            <main class="container">
+                <div class="product-grid" id="product-grid"></div>
+            </main>
+        </section>
+
+        <section class="comfort" id="comfort">
+            <div class="comfort__bg"></div>
+            <div class="comfort__overlay"></div>
+
+            <div class="comfort__content">
+                <h1 class="comfort__title">The Secret Behind Our Backpack's Comfort</h1>
+                <p class="comfort__body">
+                    This Backpack Is Designed For Those Who Are Active, Confident, And Appreciate
+                    Practical Design Without Sacrificing Style. With High-Quality Materials And
+                    Ample Storage Space, This Bag Is Ready To Accompany You On Any Occasion—From
+                    The Office To A Weekend Trip.
+                </p>
+            </div>
+        </section>
+
+        <section class="blog-section">
+
+            <div class="section-header">
+                <h2>Recent Blog Posts</h2>
+            </div>
+
+            <div class="blog-grid" id="blogGrid">
+            </div>
+
+            <div class="btn-wrap">
+                <button class="btn-all">See All &rarr;</button>
+            </div>
+        </section>
+
+        <section class="story-section">
+
+            <!-- ── TOP: HERO SPLIT ── -->
+            <div class="story-top">
+                <div class="story-img-col">
+                    <img src="./Assets/Logoshowchasing.png" alt="Leather craftsman at work" />
+                    <div class="year-stamp">1998</div>
+                    <div class="img-ribbon">
+                        "Every stitch tells the story of the hands that made it."
+                        <span>— Founding Principle</span>
+                    </div>
+                </div>
+
+                <div class="story-text-col">
+                    <div class="story-eyebrow">Our Story</div>
+                    <h2 class="story-heading">
+                        Born from<br /><em>craft,</em><br />built to last.
+                    </h2>
+                    <div class="story-body">
+                        <p>What began as a single workshop in 1998 — two craftspeople, one sewing machine, and an
+                            obsession with durability — has grown into one of the most trusted names in premium bag
+                            making. We never chased trends. We chased perfection in every seam, every buckle, every
+                            strap.</p>
+                        <p style="margin-top:16px">Each bag we produce is a conversation between maker and material. We
+                            source only full-grain leathers and weatherproof canvases, treating every piece not as a
+                            product but as an object meant to outlive fashion itself.</p>
+                    </div>
+                   
+                    <div class="story-stats">
+                        <div class="stat-item">
+                            <span class="stat-num">26+</span>
+                            <span class="stat-label">Years of Craft</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">18k</span>
+                            <span class="stat-label">Bags Made</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">42</span>
+                            <span class="stat-label">Countries Reached</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">3</span>
+                            <span class="stat-label">Generations of Makers</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ── TIMELINE ── -->
+            <div class="timeline-band">
+                <div class="timeline-header">
+                    <p>A Journey Through Time</p>
+                    <h3>Milestones that shaped us</h3>
+                </div>
+
+                <div class="timeline-track" id="timelineTrack">
+
+                    <div class="tl-item">
+                        <div class="tl-content">
+                            <div class="tl-title">The First Workshop</div>
+                            <div class="tl-desc">Founded in a small Surat atelier, our two founders began hand-stitching
+                                canvas duffels for local travellers. Word spread faster than they could sew.</div>
+                            <span class="tl-tag">Origin</span>
+                        </div>
+                        <div class="tl-dot-col">
+                            <div class="tl-dot"></div>
+                            <div class="tl-year">1998</div>
+                        </div>
+                        <div class="tl-img">
+                            <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=500&q=80"
+                                alt="Workshop 1998" />
+                        </div>
+                    </div>
+
+                    <div class="tl-item">
+                        <div class="tl-img">
+                            <img src="https://images.unsplash.com/photo-1547949003-9792a18a2601?w=500&q=80"
+                                alt="First leather collection" />
+                        </div>
+                        <div class="tl-dot-col">
+                            <div class="tl-dot"></div>
+                            <div class="tl-year">2004</div>
+                        </div>
+                        <div class="tl-content">
+                            <div class="tl-title">Leather Enters the Story</div>
+                            <div class="tl-desc">We introduced our first full-grain leather line — a bold leap that
+                                demanded new skills, new tools, and a year of failed prototypes before the perfect tote
+                                emerged.</div>
+                            <span class="tl-tag">Collection</span>
+                        </div>
+                    </div>
+
+                    <div class="tl-item">
+                        <div class="tl-content">
+                            <div class="tl-title">Going Beyond Borders</div>
+                            <div class="tl-desc">Our first international retail partnership took the brand to Dubai,
+                                Singapore and London. The world recognised what Surat's hands had always known.</div>
+                            <span class="tl-tag">Expansion</span>
+                        </div>
+                        <div class="tl-dot-col">
+                            <div class="tl-dot"></div>
+                            <div class="tl-year">2010</div>
+                        </div>
+                        <div class="tl-img">
+                            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=500&q=80"
+                                alt="International expansion" />
+                        </div>
+                    </div>
+
+                    <div class="tl-item">
+                        <div class="tl-img">
+                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=80"
+                                alt="Waterproof innovation" />
+                        </div>
+                        <div class="tl-dot-col">
+                            <div class="tl-dot"></div>
+                            <div class="tl-year">2016</div>
+                        </div>
+                        <div class="tl-content">
+                            <div class="tl-title">The Weatherproof Revolution</div>
+                            <div class="tl-desc">After three years of textile R&D, we launched our proprietary
+                                WeaveShield™ canvas — a waterproof, tear-resistant fabric now used across our entire
+                                adventure range.</div>
+                            <span class="tl-tag">Innovation</span>
+                        </div>
+                    </div>
+
+                    <div class="tl-item">
+                        <div class="tl-content">
+                            <div class="tl-title">Second Generation Takes the Helm</div>
+                            <div class="tl-desc">The founders' children, raised between workshop floors and leather
+                                samples, stepped into creative leadership — honouring the craft while propelling the
+                                brand into the digital age.</div>
+                            <span class="tl-tag">Legacy</span>
+                        </div>
+                        <div class="tl-dot-col">
+                            <div class="tl-dot"></div>
+                            <div class="tl-year">2020</div>
+                        </div>
+                        <div class="tl-img">
+                            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=500&q=80"
+                                alt="New generation" />
+                        </div>
+                    </div>
+
+                    <div class="tl-item">
+                        <div class="tl-img">
+                            <img src="https://images.unsplash.com/photo-1586495777744-4e6232bf4f08?w=500&q=80"
+                                alt="Sustainable future" />
+                        </div>
+                        <div class="tl-dot-col">
+                            <div class="tl-dot"></div>
+                            <div class="tl-year">2024</div>
+                        </div>
+                        <div class="tl-content">
+                            <div class="tl-title">Crafting a Sustainable Future</div>
+                            <div class="tl-desc">We committed to zero-waste production by 2027. Every offcut is now
+                                repurposed into small leather goods, lining panels, or donated to artisan schools across
+                                Gujarat.</div>
+                            <span class="tl-tag">Sustainability</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="story-bottom">
+                <div class="story-craft-img">
+                    <img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=900&q=85"
+                        alt="Artisan stitching leather" />
+                </div>
+                <div class="story-craft-text">
+                    <div class="craft-label">Our Philosophy</div>
+                    <div class="craft-quote">"We don't make bags. We make companions for life's longest journeys."</div>
+                    <div class="craft-sub">Every piece that leaves our atelier carries with it decades of knowledge, the
+                        warmth of human hands, and the quiet confidence of something made to endure. That is our promise
+                        — not just to you, but to the craft itself.</div>
+                    <div class="craft-sig">
+                        <div class="craft-sig-line"></div>
+                        <div>
+                            <div class="craft-sig-name">Rajan & Priya Mehta</div>
+                            <div class="craft-sig-role">Co-Founders</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+
+            <!-- ── SUBSCRIBE BAND ── -->
+            <div class="footer-subscribe">
+                <div class="subscribe-left">
+                    <h2 class="subscribe-heading">Subscribe Us</h2>
+                    <a href="#" class="subscribe-arrow-btn" aria-label="Subscribe">
+                        <svg viewBox="0 0 24 24">
+                            <line x1="7" y1="17" x2="17" y2="7" />
+                            <polyline points="7 7 17 7 17 17" />
+                        </svg>
+                    </a>
+                </div>
+
+                <form class="subscribe-form" onsubmit="return false;">
+                    <input type="email" placeholder="Enter your email address" aria-label="Email address" />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- ── MAIN BODY ── -->
+            <div class="footer-body">
+
+                <!-- Help & Information -->
+                <div class="footer-nav-col">
+                    <h4>Help &amp; Information</h4>
+                    <ul>
+                        <li><a href="#">Pagination</a></li>
+                        <li><a href="#">Terms &amp; Condition</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Term of Use</a></li>
+                        <li><a href="#">Pagination</a></li>
+                    </ul>
+                </div>
+
+                <!-- About Us -->
+                <div class="footer-nav-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Address Store</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Receivers &amp; Amplifiers</a></li>
+                        <li><a href="#">Craftsadore</a></li>
+                    </ul>
+                </div>
+
+                <!-- Placeholder spacer column on wide screens, collapses on mobile -->
+                <div class="footer-nav-col" aria-hidden="true"></div>
+
+                <!-- FAQ Column -->
+                <div class="footer-faq-col">
+                    <p class="faq-intro">Maybe Your Question Is Have Been Answered, Check This Out.</p>
+                    <ul class="faq-list" id="footerFaq">
+
+                        <li class="faq-item">
+                            <button class="faq-trigger" aria-expanded="false">
+                                What is RIDGED Soft
+                                <svg class="faq-icon" viewBox="0 0 24 24">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </button>
+                            <div class="faq-panel" hidden>
+                                <p>RIDGED Soft is our flagship material line — a premium waterproof canvas engineered
+                                    for everyday carry. It combines military-grade durability with a supple,
+                                    leather-like finish that softens beautifully over time.</p>
+                            </div>
+                        </li>
+
+                        <li class="faq-item">
+                            <button class="faq-trigger" aria-expanded="false">
+                                How can I get service from Ridged Soft
+                                <svg class="faq-icon" viewBox="0 0 24 24">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </button>
+                            <div class="faq-panel" hidden>
+                                <p>You can reach our service team via the Help Center, by emailing support@ridged.com,
+                                    or by visiting any of our address stores. We typically respond within 24 hours on
+                                    business days.</p>
+                            </div>
+                        </li>
+
+                        <li class="faq-item">
+                            <button class="faq-trigger" aria-expanded="false">
+                                What kind of service will I get
+                                <svg class="faq-icon" viewBox="0 0 24 24">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </button>
+                            <div class="faq-panel" hidden>
+                                <p>We offer full product repairs, strap replacements, hardware swaps, and deep-clean
+                                    conditioning. Every bag comes with a 2-year craftsmanship warranty covering any
+                                    manufacturing defects.</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div><!-- /footer-body -->
+
+            <!-- ── BOTTOM BAR ── -->
+            <div class="footer-bottom">
+
+                <nav class="footer-legal" aria-label="Legal links">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">Legal</a>
+                    <a href="#">Recalls</a>
+                </nav>
+
+                <span class="footer-copy">©2026 Crafted By Utkarsh Desai for Learning Purpose</span>
+                <div class="footer-socials" aria-label="Social media">
+
+                    <a href="#" class="social-icon" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29.12 29.12 0 0 0 1 12a29.12 29.12 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29.12 29.12 0 0 0 23 12a29.12 29.12 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                        </svg>
+                    </a>
+
+                    <a href="#" class="social-icon" aria-label="Google">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M21.35 11.1H12v2.8h5.35C16.8 16.2 14.6 17.6 12 17.6c-3.09 0-5.6-2.51-5.6-5.6s2.51-5.6 5.6-5.6c1.42 0 2.72.53 3.71 1.39l2.12-2.12A9.35 9.35 0 0 0 12 3a9 9 0 1 0 9 9c0-.6-.06-1.18-.16-1.74l-.49-.16z" />
+                        </svg>
+                    </a>
+
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
