@@ -1,5 +1,5 @@
 :root {
-    --clr-bg: #e0e0e0;
+    --clr-bg: #f0ede6;
     --clr-text: #0d0d0d;
     --clr-text-muted: #154dd9;
     --clr-accent: #F4F1EA;
@@ -29,12 +29,14 @@
 }
 
 body {
-    background-color: var(--clr-bg);
+    background-color: #f0ede6;
     color: var(--clr-text);
     font-family: var(--font-body);
     overflow-x: hidden;
     line-height: 1.6;
+    padding-top: 4rem; /* Account for fixed navbar */
 }
+
 
 .d-flex {
     display: flex;
@@ -75,6 +77,13 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.85rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--clr-bg);
 }
 
 .logo {
@@ -103,6 +112,20 @@ body {
     gap: 1.5rem;
     font-size: 1.2rem;
     cursor: pointer;
+}
+
+.nav-icons i {
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-icons i:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: var(--cofee);
 }
 
 .hamburger {
@@ -679,7 +702,7 @@ body {
 }
 
 .image-container {
-    background-color: #FFFFFF;
+    background-color: transparent;
     border-radius: 12px;
     padding: 30px;
     aspect-ratio: 1 / 1;
